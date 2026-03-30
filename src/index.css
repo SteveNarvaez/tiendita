@@ -1,0 +1,28 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  
+  --color-brand-orange: #FF6B35;
+  --color-brand-red: #E84855;
+  --color-brand-yellow: #FFD166;
+  --color-brand-green: #06D6A0;
+  --color-brand-dark: #1D3557;
+}
+
+@layer base {
+  body {
+    @apply bg-gray-50 text-brand-dark font-sans antialiased;
+    -webkit-tap-highlight-color: transparent;
+  }
+}
+
+@layer utilities {
+  .no-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+  .no-scrollbar {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+}
