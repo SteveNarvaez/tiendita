@@ -50,9 +50,40 @@ export default function App() {
 
   const clearCart = () => setCart([]);
 
-    const handleConfirmOrder = (details: OrderDetails) => {
-    // In a real app, this would send to a server or WhatsApp API
-    console.log('Order Confirmed:', { details, cart, total: cartTotal });
+const handleConfirmOrder = (details: OrderDetails) => {
+    // 1. AQUÍ PON TU NÚMERO DE WHATSAPP (Con el 52 de México al inicio)
+    const numeroWhatsApp = "525512345678"; 
+
+    // 2. Armamos el mensaje de texto con formato
+    let mensaje = `*¡Nuevo Pedido de Tiendita Local!* 🛵\n\n`;
+    
+    mensaje += `*📍 Datos del Cliente:*\n`;
+    mensaje += `Nombre: ${details.name}\n`;
+    mensaje += `Dirección: ${details.address}\n`;
+    if (details.references) {
+      mensaje += `Referencias: ${details.references}\n`;
+    }
+    mensaje += `Teléfono de contacto: ${details.whatsapp}\n\n`;
+    
+    mensaje += `*🛒 Detalles de la Orden:*\n`;
+    cart.forEach(item => {
+      mensaje += `- ${item.quantity}x ${item.name} (${formatCurrency(item.price)})\n`;
+    });
+
+    mensaje += `\n*💳 Resumen de Pago (Efectivo):*\n`;
+    mensaje += `Subtotal: ${formatCurrency(cartTotal)}\n`;
+    mensaje += `Envío: ${formatCurrency(deliveryFee)}\n`;
+    mensaje += `*TOTAL A PAGAR: ${formatCurrency(finalTotal)}*\n\n`;
+    mensaje += `Por favor, confirmen mi pedido.`;
+
+    // 3. Convertimos el texto para que se pueda enviar por internet
+    const textoCodificado = encodeURIComponent(mensaje);
+    const urlWhatsApp = `https://wa.me/${numeroWhatsApp}?text=${textoCodificado}`;
+
+    // 4. Abrimos WhatsApp en una pestaña nueva
+    window.open(urlWhatsApp, '_blank');
+
+    // 5. Mostramos la pantalla de éxito en la página
     setOrderSuccess(true);
     setIsCheckoutOpen(false);
     setIsCartOpen(false);
