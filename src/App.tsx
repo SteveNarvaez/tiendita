@@ -52,7 +52,7 @@ export default function App() {
 
 const handleConfirmOrder = (details: OrderDetails) => {
     // 1. AQUÍ PON TU NÚMERO DE WHATSAPP (Con el 52 de México al inicio)
-    const numeroWhatsApp = "525512345678"; 
+    const numeroWhatsApp = "525624396341"; 
 
     // 2. Armamos el mensaje de texto con formato
     let mensaje = `*¡Nuevo Pedido de Tiendita Local!* 🛵\n\n`;
