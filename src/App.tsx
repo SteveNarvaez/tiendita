@@ -132,7 +132,7 @@ const handleConfirmOrder = (details: OrderDetails) => {
             T
           </div>
           <div>
-            <h1 className="font-bold text-lg leading-tight">Tiendita Local</h1>
+            <h1 className="font-bold text-lg leading-tight">El Mexicano</h1>
             <p className="text-xs text-brand-green font-medium flex items-center gap-1">
               <span className="w-1.5 h-1.5 bg-brand-green rounded-full animate-pulse" />
               Abierto ahora
