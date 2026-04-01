@@ -13,7 +13,7 @@ export const PRODUCTS: Product[] = [
     id: "a1",
     name: "Caguama Victoria 1.2L",
     price: 45,
-    image: "https://picsum.photos/seed/victoria/400/400",
+    image: "https://tse2.mm.bing.net/th/id/OIP.Zs5GTxlRr9Zf2yjaEK6WWQHaHa?rs=1&pid=ImgDetMain&o=7&rm=3",
     category: "alcohol",
     description: "Bien fría, envase retornable (entregar envase)"
   },
