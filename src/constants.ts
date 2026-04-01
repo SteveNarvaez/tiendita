@@ -21,35 +21,35 @@ export const PRODUCTS: Product[] = [
     id: "a2",
     name: "Six Pack Corona Extra 355ml",
     price: 115,
-    image: "https://picsum.photos/seed/corona/400/400",
+    image: "https://images.rappi.com.mx/products/62f7f1db-b7f8-4af3-b14f-021453c3a141.jpg",
     category: "alcohol"
   },
   {
     id: "a3",
     name: "Six Pack Modelo Especial Lata",
     price: 125,
-    image: "https://picsum.photos/seed/modelo/400/400",
+    image: "https://th.bing.com/th/id/OIP.WzCUpsyANicOBtECckAEfwHaHa?w=186&h=186&c=7&r=0&o=7&dpr=1.3&pid=1.7&rm=3",
     category: "alcohol"
   },
   {
     id: "a4",
     name: "Bacardí Carta Blanca 750ml",
     price: 240,
-    image: "https://picsum.photos/seed/bacardi/400/400",
+    image: "https://th.bing.com/th/id/OIP.D_J5HlPGw9DcYCi3AWyoDgHaHa?w=208&h=208&c=7&r=0&o=7&dpr=1.3&pid=1.7&rm=3",
     category: "alcohol"
   },
   {
     id: "a5",
     name: "Tequila José Cuervo Especial 990ml",
     price: 280,
-    image: "https://picsum.photos/seed/cuervo/400/400",
+    image: "https://th.bing.com/th/id/OIP.Tos5E8h4larTj24xCgLQVAHaHa?w=211&h=211&c=7&r=0&o=7&dpr=1.3&pid=1.7&rm=3",
     category: "alcohol"
   },
   {
     id: "a6",
     name: "Caribe Cooler Tinto 300ml",
     price: 32,
-    image: "https://picsum.photos/seed/caribe/400/400",
+    image: "https://th.bing.com/th/id/OIP.MtnV8RmQFQ57AmO0e26sSgAAAA?w=200&h=200&c=7&r=0&o=7&dpr=1.3&pid=1.7&rm=3",
     category: "alcohol"
   },
 
@@ -58,7 +58,7 @@ export const PRODUCTS: Product[] = [
     id: "b1",
     name: "Coca-Cola 600ml",
     price: 18,
-    image: "https://picsum.photos/seed/coke/400/400",
+    image: "https://th.bing.com/th/id/OIP.TUaLsx-PqOHIyOfWZwxRxQHaHa?w=187&h=187&c=7&r=0&o=7&dpr=1.3&pid=1.7&rm=3",
     category: "bebidas",
     description: "Refresco original de 600ml"
   },
