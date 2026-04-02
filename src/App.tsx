@@ -159,7 +159,7 @@ const handleConfirmOrder = (details: OrderDetails) => {
             <h2 className="text-2xl font-bold mb-1">¿Antojo de algo?</h2>
             <p className="text-white/80 text-sm mb-4">Entrega rápida en menos de 20 min.</p>
             <div className="inline-flex bg-white/20 backdrop-blur-sm px-3 py-1 rounded-full text-xs font-bold">
-              🚚 Envío Gratis en tu zona
+              🚚 Envío en tu zona
             </div>
           </div>
           <div className="absolute -right-4 -bottom-4 opacity-20 transform rotate-12">
