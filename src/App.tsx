@@ -570,6 +570,9 @@ function CheckoutForm({
             <span className="text-2xl font-bold text-brand-orange">{formatCurrency(total + deliveryFee)}</span>
             <span className="text-lg font-bold">⚠️ IMPORTANTE: No olvides presionar "Enviar" en tu WhatsApp para que recibamos y preparemos tu pedido.</span>
           </div>
+          <div className="flex items-center justify-between pt-2 border-t border-gray-200">
+              <span className="text-lg font-bold">⚠️ IMPORTANTE: No olvides presionar "Enviar" en tu WhatsApp para que recibamos y preparemos tu pedido.</span>
+          </div>
         </div>
         
         <button 
